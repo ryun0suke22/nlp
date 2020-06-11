@@ -4,6 +4,7 @@ import cchardet
 from bs4 import BeautifulSoup
 
 if __name__ == '__main__':
+    # wiki page '日本語'
     url = 'https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC'
     with urllib.request.urlopen(url) as res:
         byte = res.read()
