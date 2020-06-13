@@ -24,7 +24,7 @@ def create_table():
             token       BLOB
         )''')
 
-
+### be aware of risk of SQL injections. (only hobby use.)
 def load(values):
     conn.executemany(
         'INSERT INTO docs (content, meta_info) VALUES (?,?)',
