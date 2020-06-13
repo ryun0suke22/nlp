@@ -140,3 +140,4 @@ cython_debug/
 # Other
 result/wikipedia_text
 data/jawiki-latest-pages-articles.xml.bz2
+sample.db
