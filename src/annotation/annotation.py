@@ -23,9 +23,12 @@ def create_annotation(doc_id, ptn):
 
 if __name__ == '__main__':
     dic = [
-        r'.+?大学',
-        r'.+?学会',
-        r'.+?協会',
+        # r'.+?大学',
+        r'[^ 「(( ]+?大学',
+        # r'.+?学会',
+        r'[^ 「(( ]+?学会',
+        # r'.+?協会',
+        r'[^ 「(( ]+?協会',
     ]
     ptn = re.compile(r'|'.join(dic))
 
